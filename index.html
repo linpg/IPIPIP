@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> IP 查询</title>
+    <title> 利8专用网站，请放心</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -16,14 +16,14 @@
     </style>
 </head>
 <body>
-    <h1>IP 查询</h1>
+    <h1>利8专用网站，请放心</h1>
     <p id="result">跳转中，请稍后...</p>
 
     <script>
         async function getIP() {
             const response = await fetch('https://api.ipify.org?format=json');
             const data = await response.json();
-            document.getElementById('result').innerText = `请将此画面进行截图提供: ${data.ip}`;
+            document.getElementById('result').innerText = `请将此画面截图提供给利8官方: ${data.ip}`;
         }
         getIP();
     </script>
