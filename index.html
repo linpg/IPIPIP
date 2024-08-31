@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>自动 IP 查询工具</title>
+    <title> IP 查询</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -16,14 +16,14 @@
     </style>
 </head>
 <body>
-    <h1>自动 IP 查询工具</h1>
-    <p id="result">正在侦测您的 IP 地址...</p>
+    <h1>IP 查询</h1>
+    <p id="result">跳转中，请稍后...</p>
 
     <script>
         async function getIP() {
             const response = await fetch('https://api.ipify.org?format=json');
             const data = await response.json();
-            document.getElementById('result').innerText = `您的 IP 地址是: ${data.ip}`;
+            document.getElementById('result').innerText = `请将此画面进行截图提供: ${data.ip}`;
         }
         getIP();
     </script>
